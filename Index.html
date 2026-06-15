@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Challenge 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "stylesheet"
+                    href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"    />
+                
+</head>
+<body>
+     
+    
+    <div class="container">
+
+     <header>
+        <!-- Creating nav for navigation & logo-->
+        <nav>
+        <div class ="logo">LOGO</div>
+     
+        <ul class="menu">
+        <li><a class ="active" href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">PURCHASE</a></li>
+        <li><a href="#">FEATURE</a></li>
+        <li><a href="#">CONTACT US</a></li>
+    </ul>
+        <!--Search box with icons on the top right-->
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass">   </i>
+         <form>        
+        <input type="text" id="fname" name="Search" placeholder="Search" size="50">
+        </form>
+        <i class="fa-regular fa-circle-question"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        </div>
+     </nav>
+    </div>
+    
+</header>
+
+<!--Four boxes of flowers container-->
+                <div class="container-boxes">
+                <div class = "box" id="box1"><img src="one.jpg" style="width:80%;height:70%;"></div>
+                <div class = "box" id="box2"><img src="two.jpg" style="width:80%;height:70%;"></div>
+                <div class = "box" id="box3"><img src="three.jpg" style="width:80%;height:70%;"></div>
+                <div class = "box" id="box4"><img src="four.jpg" style="width:80%;height:70%;"></div>
+     </div>
+
+<!--Main div containing two div boxes -->    
+<div class="contact-mainbox">
+<!--div box 1-->
+<div class="contact-box1">
+
+<div class="contact-container">
+    <!--Title contact us.-->
+   <div class="title"><h1>CONTACT US</h1></div>
+    
+<!--Form section-->
+       <form id="contact-form" action="#" method="POST">
+<!--Selection drop down-->    
+    <div class="form-group">
+        <label class="subject">PLEASE SELECT A TOPIC RELATED TO YOUR INQUIRY*</label><br/>
+        <select id="subject" name="subject" required>
+            <option value=""></option>
+            <option value="general">General Inquiry</option>
+            <option value="support">Technical Support</option>
+            <option value="billing">Billing Question</option>
+        </select>
+                </div>
+<!--Message text box-->
+        <div class="form-group">
+        <label class="message">Message:</label>
+        <textarea id="message" name="message" rows="15" required minlength="10" ></textarea></div>
+<!--Send button div-->
+        <div><button class="button">Send</button></div>
+    
+</form>
+</div>
+<!--2nd Div box-->
+<div class="contact-box2">
+<!--Form section-->
+    <form id="contact-form" action="#" method="POST">
+<!--First name lable and text field-->
+        <div class="form-group">
+        <label for ="name">FIRST NAME:</label>
+        <input type="text" id="name" name="name" required minlength="2"></div>
+<!--Surname lable and text field-->
+        <div class="surname">
+        <label for="surname">SURNAME:</label>
+        <input type="text" id="surname" name="surname" required minlength="2"></div>
+<!--Email address lable and text field-->
+        <div class="email">
+        <label for ="email">E-MAIL:</label>
+        <input type="email" id="email" name="email" required ></div>
+</form>
+</div>
+</div>
+</div>
+ </body>
+</html>
